@@ -16,7 +16,7 @@
 
   --clr-light: #ffffff;
   --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  --clr-accent: #b18bfed9;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -260,7 +260,7 @@ header {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: -2;
+  z-index: 0;
 }
 
 .intro-bg iframe {
@@ -270,6 +270,17 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.intro-bg canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.intro > *:not(.intro-bg) {
+  position: relative;
+  z-index: 1;
 }
 
 .intro__img {
@@ -314,7 +325,7 @@ header {
 
 .my-services {
   background-color: var(--clr-dark);
-  background-image: url(../img/skills-bg.jpg);
+  /* background-image: url(../img/skills-bg.jpg); */
   background-size: cover;
   background-blend-mode: overlay;
   color: var(--clr-light);
@@ -348,13 +359,22 @@ header {
 @media (min-width: 800px) {
   .services {
     display: flex;
+    justify-content: center;
+    gap: 2em;
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+  }
+
+  .service {
+    flex: 1;
+    margin: 0;
+    text-align: center;
   }
 
   .service + .service {
-    margin-left: 2em;
+    margin-left: 0;
   }
 }
 
