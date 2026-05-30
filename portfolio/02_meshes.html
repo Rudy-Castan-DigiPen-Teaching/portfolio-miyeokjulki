@@ -11,7 +11,7 @@
     <!-- Help auto scale for desktop & mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>STUDENT TODO Website</title>
+    <title>Youngwoo Lee Procedural Meshes Website</title>
 
     <!-- Normalize the difference across browsers  https://necolas.github.io/normalize.css/ -->
     <link rel="stylesheet" href="../external/normalize.css">
@@ -33,7 +33,7 @@
     <header>
         <div class="logo">
             <!-- alt text can be blank since the logo is purely decorative and putting something like logo isn't actually helpful -->
-            <img src="../img/cout.jpg" alt="">
+            <!--img src="../img/cout.jpg" alt=""-->
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
@@ -61,7 +61,7 @@
 
     <!-- Introduction -->
     <section class="intro">
-        <!-- TODO put the name of the assignment here -->
+        <!--  put the name of the assignment here -->
         <h1 class="section__title section__title--intro">
             Project <strong>Procedural Geometric Modeling</strong>
         </h1>
@@ -71,22 +71,24 @@
 
     <div class="portfolio-item-individual">
         <h2>Project Overview</h2>
-        <p>Provide a brief description of the project, its purpose, and what you aimed to achieve.</p>
+        <p>Generated various procedural meshes using stacks and slices.
+             Constructed meshes by calculating vertices and indices according to the characteristics of each shape.</p>
 
         <h2>Tasks Completed</h2>
         <ul>
-            <li>Describe the tasks you completed for this project.</li>
-            <li>Be specific about your contributions and the technologies used.</li>
+            <li>Implemented mesh generation functions for cubes, planes, spheres, toruses, cylinders, and cones.</li>
+            <li>Developed vertex generation and index buffer construction logic.</li>
         </ul>
 
         <h2>Reflection</h2>
-        <p>Reflect on the project, discussing any challenges faced, solutions implemented, and what you learned from the
-            experience.</p>
+        <p>The most challenging part was figuring out how to construct the caps of cylinders and cones 
+            using the correct number of vertices and triangles. This project helped me better understand 
+            procedural mesh generation and how vertices are connected to form mesh surfaces.</p>
     </div>
 
     <div class="portfolio-item-individual">
         <h2>Demo</h2>
-        <iframe id="demo" src="../webgl/D02ProceduralMeshes/graphics_fun.html?start=meshes" tabindex="-1"></iframe>
+        <iframe id="demo" src="https://miyeokjulki.github.io/Procedural_Meshes_URL/"></iframe>
     </div>
 
     <!-- Footer -->
@@ -94,12 +96,12 @@
         <a href="mailto:my.email@digipen.edu" class="footer__link">my.email@digipen.edu</a>
         <ul class="social-list">
             <li class="social-list__item">
-                <a class="social-list__link" href="https://linkedin.com/in/mylinkedinid">
+                <a class="social-list__link" href="https://www.linkedin.com/in/영우-이-b26546408/">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/mygithubid">
+                <a class="social-list__link" href="https://github.com/miyeokjulki/">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
