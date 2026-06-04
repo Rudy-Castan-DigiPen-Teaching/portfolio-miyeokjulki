@@ -6,11 +6,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="../img/face.jpg">
+    <link rel="icon" type="image/svg+xml" href="../img/face_youngwooLee.jpg">
 
     <!-- Help auto scale for desktop & mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STUDENT TODO Website</title>
+    <title>Youngoo Lee Value Noise Website</title>
 
     <!-- Normalize the difference across browsers  https://necolas.github.io/normalize.css/ -->
     <link rel="stylesheet" href="../external/normalize.css">
@@ -32,7 +32,7 @@
     <header>
         <div class="logo">
             <!-- alt text can be blank since the logo is purely decorative and putting something like logo isn't actually helpful -->
-            <img src="../img/cout.jpg" alt="">
+            <!-- img src="../img/cout.jpg" alt="" -->
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
@@ -69,35 +69,38 @@
 
     <div class="portfolio-item-individual">
         <h2>Project Overview</h2>
-        <p>Provide a brief description of the project, its purpose, and what you aimed to achieve.</p>
+        <p>Implemented a Value Noise system capable of generating smooth procedural noise textures
+             through interpolation and configurable smoothing methods.</p>
 
         <h2>Tasks Completed</h2>
         <ul>
-            <li>Describe the tasks you completed for this project.</li>
-            <li>Be specific about your contributions and the technologies used.</li>
+            <li>Implemented the core components of a Value Noise pipeline,
+                 including coordinate processing, permutation hashing, and interpolation between sampled values</li>
+            <li>Developed support for multiple smoothing methods 
+                (Linear, Cosine, Smoothstep, and Quintic) and applied them during noise evaluation.</li>
         </ul>
 
         <h2>Reflection</h2>
-        <p>Reflect on the project, discussing any challenges faced, solutions implemented, and what you learned from the
-            experience.</p>
+        <p>Through this project, I gained a better understanding of Value Noise and how interpolation and smoothing functions affect the final result.
+             I also became more comfortable implementing mathematical systems from a specification.</p>
     </div>
 
     <div class="portfolio-item-individual">
         <h2>Demo</h2>
-        <iframe id="demo" src="../webgl/D06ValueNoise/graphics_fun.html?start=value" tabindex="-1"></iframe>
+        <iframe id="demo" src="https://miyeokjulki.github.io/Value_Noise_URL/" tabindex="-1"></iframe>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <a href="mailto:my.email@digipen.edu" class="footer__link">my.email@digipen.edu</a>
+        <a href="mailto:youngwoo.lee@digipen.edu" class="footer__link">youngwoo.lee@digipen.edu</a>
         <ul class="social-list">
             <li class="social-list__item">
-                <a class="social-list__link" href="https://linkedin.com/in/mylinkedinid">
+                <a class="social-list__link" href="https://www.linkedin.com/in/영우-이-b26546408/">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/mygithubid">
+                <a class="social-list__link" href="https://github.com/miyeokjulki/">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
